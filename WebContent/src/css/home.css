@@ -1,0 +1,34 @@
+.over-image-text {
+	position: absolute;
+	font-style:italic;
+	font-size:x-large;
+	font-weight:bolder;
+	font-family:"Lucida Handwriting";
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index:1;
+}
+.image {
+    position: relative;
+}
+.image img {
+    width: 100%;
+    vertical-align: top;
+}
+.image:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0.7;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.img-container {
+	position: relative;
+  	text-align: center;
+  	color: white;
+ 	border-radius:20px;
+}
